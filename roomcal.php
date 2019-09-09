@@ -25,7 +25,7 @@ if (mysqli_num_rows($result) > 0)
  {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
-     echo "\r\nBEGIN:VEVENT\r\nDTSTART;VALUE=DATE:". $row["DataOd"]. "\r\nDTEND;VALUE=DATE:". $row["DataDo"] ."\r\nUID:" . $row["RezerwacjaID"].  "@BAZA15.PL\r\nSUMMARY: Osob" .$row["Osob"] . ", Cena:" .$row["Cena"]. "\r\nEND:VEVENT";
+     echo "\r\nBEGIN:VEVENT\r\nDTSTART;VALUE=DATE:". $row["DataOd"]. "\r\nDTEND;VALUE=DATE:". $row["DataDo"] ."\r\nUID:" . $row["RezerwacjaID"].  "@HOTEL.PL\r\nSUMMARY: Osob" .$row["Osob"] . ", Cena:" .$row["Cena"]. "\r\nEND:VEVENT";
     }
 } else {
     echo "0 results";
